@@ -1,10 +1,5 @@
-
 function Home() {
-  return (
-    <div>
-      Hello World 🌠 
-    </div>
-  );
+  return <h1>Hello World 🌠</h1>
 }
 
-export default Home;
+export default Home
