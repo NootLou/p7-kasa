@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/LOGO.png'
 
 const HeaderContainer = styled.div`
-  border: 1px solid black;
+  // border: 1px solid black;
   width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const StyledImage = styled.img`
-  height: 68px;
+  height: 80px;
 `
 
 const StyledLink = styled(Link)`
@@ -20,7 +21,11 @@ const StyledLink = styled(Link)`
   padding: 10px;
   margin-left: 30px;
   font-family: Montserra, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `
 
 function Header() {
