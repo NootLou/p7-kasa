@@ -5,30 +5,29 @@ import img404 from '../../assets/404.png'
 
 const ErrorContainer = styled.div`
   // border: 1px solid black;
-  font-family: Montserra, sans-serif;
-  margin: 0 auto;
+  margin: 30px auto;
+  padding: 100px 0px;
   text-align: center;
   color: #ff6060;
 `
 
 const Error404 = styled.img`
   // border: 1px solid black;
-  margin: 150px 0px 50px 0px;
+  height: 263px;
+  margin: 100px 0px;
 `
 
 const ErrorTitle = styled.h1`
   // border: 1px solid black;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 200px;
-  margin-top: 50px;
+  font-size: 36px;
+  margin-bottom: 100px;
 `
 
 const HomePageLink = styled(Link)`
   // border: 1px solid black;
+  font-size: 18px;
   text-decoration: underline;
   color: #ff6060;
-  margin-top: 200px;
 `
 
 function Error() {

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const CardContainer = styled.div`
   // border: 1px solid black;
   border-radius: 10px;
+  min-width: 340px;
   width: 340px;
   height: 340px;
   overflow: hidden;
@@ -11,13 +12,11 @@ const CardContainer = styled.div`
 
 const CardImage = styled.img`
   // border: 1px solid black;
-  // width: 100%;
   height: 340px;
 `
 
 const CardLTitle = styled.p`
   // border: 1px solid black;
-  font-family: Montserrra, sans-serif;
   font-size: 18px;
   color: white;
   margin-left: 10px;
