@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
       max-width: 90%;
       margin: 0 auto;
       font-family: Montserrat, sans-serif;
+      position: relative;
     }
 `
 

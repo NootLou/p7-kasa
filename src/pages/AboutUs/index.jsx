@@ -5,7 +5,11 @@ import Wrapper from '../../components/Wrapper'
 
 const Container = styled.div`
   // border: 1px solid black;
-  min-height: 875px;
+  // min-height: 875px;
+
+  // @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  //   min-height: 0px;
+  // }
 `
 
 const Banner = styled.div`
@@ -13,8 +17,12 @@ const Banner = styled.div`
   height: 400px;
   border-radius: 50px;
   background-image: url(${bannerImage});
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    height: 210px;
+  }
 `
 
 const Filter = styled.div`

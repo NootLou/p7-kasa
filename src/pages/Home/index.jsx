@@ -12,6 +12,7 @@ const Banner = styled.div`
   background-image: url(${banner});
   background-size: cover;
   background-position: center;
+  position: relative;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     height: 110px;
@@ -36,9 +37,8 @@ const Title = styled.h1`
   // border: 1px solid black;
   margin: 0px;
   position: absolute;
-  top: 170px;
-  left: 10%;
-  width: 80%;
+  top: 0px;
+  width: 100%;
   height: 400px;
   color: white;
   font-size: 64px;
@@ -46,12 +46,14 @@ const Title = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    font-size: 22px;
+    font-size: 24px;
     height: 110px;
-    width: 45%;
-    top: 150px;
+    width: 55%;
+    padding-left: 15px;
+    text-align: left;
   }
 `
 

@@ -18,6 +18,7 @@ const InfoHeader = styled.div`
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const Title = styled.p`
@@ -26,6 +27,10 @@ const Title = styled.p`
   font-size: 24px;
   margin: 0px;
   padding: 5px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 13px;
+  }
 `
 
 const Arrow = styled.div`
@@ -36,6 +41,10 @@ const Arrow = styled.div`
   font-size: 35px;
   display: flex;
   align-items: center;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 24px;
+  }
 `
 
 const InfoContentDiv = styled.div`

@@ -5,8 +5,8 @@ import logo from '../../assets/LOGO.png'
 
 const HeaderContainer = styled.div`
   // border: 1px solid black;
-  margin: 40px auto;
-  padding: 10px 0px;
+  margin: 20px auto;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
