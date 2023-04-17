@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { useState } from 'react'
+import { BsChevronDown } from 'react-icons/bs'
+import { BsChevronUp } from 'react-icons/bs'
 
 const InfoContainer = styled.div`
   // border: 1px solid black;
@@ -27,26 +29,14 @@ const Title = styled.p`
   padding: 5px;
 `
 
-const ArrowUp = styled.div`
-  border-bottom: 3px solid white;
-  border-right: 3px solid white;
-  width: 20px;
-  height: 20px;
-  transform: rotate(225deg);
+const Arrow = styled.div`
+  // border: 1px solid black;
   position: relative;
-  right: 20px;
-  top: 14px;
-`
-
-const ArrowDown = styled.div`
-  border-bottom: 3px solid white;
-  border-right: 3px solid white;
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg);
-  position: relative;
-  right: 20px;
-  top: 2px;
+  right: 5px;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
 `
 
 const InfoContentDiv = styled.div`
@@ -70,7 +60,9 @@ function Wrapper(props) {
     <InfoContainer>
       <InfoHeader>
         <Title>{props.title}</Title>
-        <ArrowUp onClick={() => setIsOpen(false)}></ArrowUp>
+        <Arrow onClick={() => setIsOpen(false)}>
+          <BsChevronUp />
+        </Arrow>
       </InfoHeader>
       <InfoContentDiv>
         <InfoContent>{props.description}</InfoContent>
@@ -80,7 +72,9 @@ function Wrapper(props) {
     <InfoContainer>
       <InfoHeader>
         <Title>{props.title}</Title>
-        <ArrowDown onClick={() => setIsOpen(true)}></ArrowDown>
+        <Arrow onClick={() => setIsOpen(true)}>
+          <BsChevronDown />
+        </Arrow>
       </InfoHeader>
     </InfoContainer>
   )

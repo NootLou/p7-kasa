@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import CarouselItem from '../CarouselItem'
+import { BsChevronLeft } from 'react-icons/bs'
+import { BsChevronRight } from 'react-icons/bs'
 
 const CarouselContainer = styled.div`
   position: relative;
@@ -14,27 +16,21 @@ const CarouselContainer = styled.div`
 `
 
 const RightArrow = styled.div`
-  border-bottom: 6px solid white;
-  border-right: 6px solid white;
-  width: 40px;
-  height: 40px;
-  transform: rotate(315deg);
   position: absolute;
   right: 40px;
   top: 300px;
   z-index: 10;
+  color: white;
+  font-size: 65px;
 `
 
 const LeftArrow = styled.div`
-  border-bottom: 6px solid white;
-  border-right: 6px solid white;
-  width: 40px;
-  height: 40px;
-  transform: rotate(135deg);
   position: absolute;
   left: 40px;
   top: 300px;
   z-index: 10;
+  color: white;
+  font-size: 65px;
 `
 
 const ItemIndex = styled.span`
@@ -59,8 +55,12 @@ function Carousel({ slides }) {
   return (
     <CarouselContainer>
       <CarouselItem slide={`${slides[activeSlide]}`}></CarouselItem>
-      <RightArrow onClick={() => nextSlide()}></RightArrow>
-      <LeftArrow onClick={() => previousSlide()}></LeftArrow>
+      <RightArrow onClick={() => nextSlide()}>
+        <BsChevronRight />
+      </RightArrow>
+      <LeftArrow onClick={() => previousSlide()}>
+        <BsChevronLeft />
+      </LeftArrow>
       <ItemIndex>
         {activeSlide + 1} / {length}
       </ItemIndex>
