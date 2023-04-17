@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { useState } from 'react'
 
-const DescriptionContainer = styled.div`
+const InfoContainer = styled.div`
   // border: 1px solid black;
   //   width: 80%;
   margin: 0 auto;
@@ -9,12 +9,12 @@ const DescriptionContainer = styled.div`
   background-color: #f7f7f7;
 `
 
-const DescriptionHeader = styled.div`
+const InfoHeader = styled.div`
   // border: 1px solid black;
   margin: 0 auto;
   padding: 5px;
   background-color: #ff6060;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
 `
@@ -24,7 +24,7 @@ const Title = styled.p`
   color: white;
   font-size: 24px;
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
 `
 
 const ArrowUp = styled.div`
@@ -35,7 +35,7 @@ const ArrowUp = styled.div`
   transform: rotate(225deg);
   position: relative;
   right: 20px;
-  top: 19px;
+  top: 14px;
 `
 
 const ArrowDown = styled.div`
@@ -46,45 +46,44 @@ const ArrowDown = styled.div`
   transform: rotate(45deg);
   position: relative;
   right: 20px;
-  top: 9px;
+  top: 2px;
 `
 
-const DescriptionContentDiv = styled.div`
+const InfoContentDiv = styled.div`
   // border: 1px solid black;
   margin: 0 px;
   padding: 20px;
-  height: 250px;
 `
 
-const DescriptionContent = styled.p`
+const InfoContent = styled.p`
   // border: 1px solid black;
-  margin: 0px;
   color: #ff6060;
   font-size: 24px;
   line-height: 142.6%;
+  margin: 10px 0px 0px 0px;
 `
 
-function DescriptionWrapper({ housing }) {
+function Wrapper(props) {
   const [isOpen, setIsOpen] = useState(false)
 
   return isOpen ? (
-    <DescriptionContainer>
-      <DescriptionHeader>
-        <Title>Description</Title>
+    <InfoContainer>
+      <InfoHeader>
+        <Title>{props.title}</Title>
         <ArrowUp onClick={() => setIsOpen(false)}></ArrowUp>
-      </DescriptionHeader>
-      <DescriptionContentDiv>
-        <DescriptionContent>{housing.description}</DescriptionContent>
-      </DescriptionContentDiv>
-    </DescriptionContainer>
+      </InfoHeader>
+      <InfoContentDiv>
+        <InfoContent>{props.description}</InfoContent>
+      </InfoContentDiv>
+    </InfoContainer>
   ) : (
-    <DescriptionContainer>
-      <DescriptionHeader>
-        <Title>Description</Title>
+    <InfoContainer>
+      <InfoHeader>
+        <Title>{props.title}</Title>
         <ArrowDown onClick={() => setIsOpen(true)}></ArrowDown>
-      </DescriptionHeader>
-    </DescriptionContainer>
+      </InfoHeader>
+    </InfoContainer>
   )
 }
 
-export default DescriptionWrapper
+export default Wrapper

@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 import { infosList } from '../../datas/aboutUs'
 import bannerImage from '../../assets/banner2.png'
-import InfoWrapper from '../../components/InfoWrapper'
+// import InfoWrapper from '../../components/InfoWrapper'
+import Wrapper from '../../components/Wrapper'
 
 const Container = styled.div`
+  // border: 1px solid black;
   min-height: 950px;
 `
 
@@ -24,15 +26,26 @@ const Filter = styled.div`
   background-color: black;
 `
 
+const WrapperContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`
+
 function AboutUs() {
   return (
     <Container>
       <Banner>
         <Filter />
       </Banner>
-      {infosList.map((info, index) => (
-        <InfoWrapper key={`${index}-${info}`} info={info}></InfoWrapper>
-      ))}
+      <WrapperContainer>
+        {infosList.map((info, index) => (
+          <Wrapper
+            key={`${index}-${info}`}
+            title={info.title}
+            description={info.description}
+          ></Wrapper>
+        ))}
+      </WrapperContainer>
     </Container>
   )
 }

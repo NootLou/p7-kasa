@@ -4,8 +4,7 @@ import { housingList } from '../../datas/housing'
 import Carousel from '../../components/Carousel'
 import HousingInfos from '../../components/HousingInfos'
 import ProfileCard from '../../components/ProfileCard'
-import DescriptionWrapper from '../../components/DescriptionWrapper'
-import EquipmentWrapper from '../../components/EquipmentWrapper'
+import Wrapper from '../../components/Wrapper'
 
 const HousingContainer = styled.div`
   // border: 1px solid black;
@@ -65,9 +64,6 @@ function Housing() {
 
   return (
     <HousingContainer>
-      {/* <Gallery>
-        <Cover src={housing.cover}></Cover>
-      </Gallery> */}
       <Carousel slides={housing.pictures}></Carousel>
       <HousingInfosContainer>
         <HousingInfos
@@ -84,10 +80,16 @@ function Housing() {
       </HousingInfosContainer>
       <DescriptionContainer>
         <DescriptionDiv>
-          <DescriptionWrapper housing={housing}></DescriptionWrapper>
+          <Wrapper
+            title="Description"
+            description={housing.description}
+          ></Wrapper>
         </DescriptionDiv>
         <EquipmentDiv>
-          <EquipmentWrapper equipments={housing.equipments}></EquipmentWrapper>
+          <Wrapper
+            title="Equipements"
+            description={housing.equipments}
+          ></Wrapper>
         </EquipmentDiv>
       </DescriptionContainer>
     </HousingContainer>
