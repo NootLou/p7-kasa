@@ -1,16 +1,15 @@
 import styled from 'styled-components'
 import { infosList } from '../../datas/aboutUs'
 import bannerImage from '../../assets/banner2.png'
-// import InfoWrapper from '../../components/InfoWrapper'
 import Wrapper from '../../components/Wrapper'
 
 const Container = styled.div`
   // border: 1px solid black;
-  min-height: 950px;
+  min-height: 875px;
 `
 
 const Banner = styled.div`
-  margin: 24px auto;
+  margin: 20px auto;
   height: 400px;
   border-radius: 50px;
   background-image: url(${bannerImage});
@@ -28,7 +27,7 @@ const Filter = styled.div`
 
 const WrapperContainer = styled.div`
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto;
 `
 
 function AboutUs() {

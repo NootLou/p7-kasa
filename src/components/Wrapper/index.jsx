@@ -5,7 +5,6 @@ import { BsChevronUp } from 'react-icons/bs'
 
 const InfoContainer = styled.div`
   // border: 1px solid black;
-  //   width: 80%;
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #f7f7f7;
@@ -32,7 +31,7 @@ const Title = styled.p`
 const Arrow = styled.div`
   // border: 1px solid black;
   position: relative;
-  right: 5px;
+  right: 15px;
   color: white;
   font-size: 35px;
   display: flex;
