@@ -12,7 +12,7 @@ import Error from './components/Error'
 
 const GlobalStyle = createGlobalStyle`
     body {
-      border: 1px solid black;
+      // border: 1px solid black;
       max-width: 90%;
       margin: 0 auto;
       font-family: Montserrat, sans-serif;
