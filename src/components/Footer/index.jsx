@@ -28,6 +28,10 @@ const StyledText = styled.p`
   color: white;
   font-size: 24px;
   line-height: 34px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 12px;
+  }
 `
 
 function Footer() {

@@ -18,16 +18,34 @@ const HomeLink = styled(Link)`
 
 const StyledImage = styled.img`
   max-height: 80px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    max-height: 40px;
+  }
+`
+
+const NavList = styled.ul`
+  // border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
 `
 
 const StyledLink = styled(Link)`
+  // border: 1px solid black;
   color: #ff6060;
   padding: 10px;
-  margin-left: 30px;
   font-size: 24px;
   text-decoration: none;
+  white-space: nowrap;
   &:hover {
     text-decoration: underline;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 12px;
+    text-transform: uppercase;
   }
 `
 
@@ -37,10 +55,10 @@ function Header() {
       <HomeLink to="/">
         <StyledImage src={logo} alt="Logo"></StyledImage>
       </HomeLink>
-      <ul>
+      <NavList>
         <StyledLink to="/">Accueil</StyledLink>
         <StyledLink to="/aboutus">A Propos</StyledLink>
-      </ul>
+      </NavList>
     </HeaderContainer>
   )
 }
