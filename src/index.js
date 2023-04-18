@@ -13,7 +13,7 @@ import Error from './components/Error'
 const GlobalStyle = createGlobalStyle`
     body {
       // border: 1px solid black;
-      max-width: 90%;
+      // max-width: 90%;
       margin: 0 auto;
       font-family: Montserrat, sans-serif;
       position: relative;
@@ -36,7 +36,3 @@ root.render(
     </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

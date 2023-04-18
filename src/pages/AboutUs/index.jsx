@@ -5,11 +5,13 @@ import Wrapper from '../../components/Wrapper'
 
 const Container = styled.div`
   // border: 1px solid black;
-  // min-height: 875px;
+  width: 90%;
+  min-height: 800px;
+  margin: 0 auto;
 
-  // @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  //   min-height: 0px;
-  // }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    min-height: 650px;
+  }
 `
 
 const Banner = styled.div`

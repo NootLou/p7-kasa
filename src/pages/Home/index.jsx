@@ -6,6 +6,7 @@ import Card from '../../components/Card'
 
 const Banner = styled.div`
   // border: 1px solid black;
+  width: 90%;
   margin: 24px auto;
   height: 400px;
   border-radius: 50px;
@@ -59,8 +60,9 @@ const Title = styled.h1`
 
 const GalleryContainer = styled.div`
   // border: 1px solid black;
+  width: 90%;
   margin: 20px auto;
-  padding: 40px;
+  padding: 40px 0px;
   background-color: #f7f7f7;
   border-radius: 25px;
   display: flex;

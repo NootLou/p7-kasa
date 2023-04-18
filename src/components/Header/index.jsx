@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
 import logo from '../../assets/LOGO.png'
+// import { useEffect } from 'react'
 
 const HeaderContainer = styled.div`
   // border: 1px solid black;
+  width: 90%;
   margin: 20px auto;
   padding: 0px;
   display: flex;
@@ -24,7 +25,7 @@ const StyledImage = styled.img`
   }
 `
 
-const NavList = styled.ul`
+const NavList = styled.nav`
   // border: 1px solid black;
   margin: 0px;
   padding: 0px;

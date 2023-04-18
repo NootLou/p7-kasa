@@ -59,6 +59,11 @@ const InfoContent = styled.p`
   font-size: 24px;
   line-height: 142.6%;
   margin: 10px 0px 0px 0px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    font-size: 12px;
+    margin: 0px;
+  }
 `
 
 function Wrapper(props) {
@@ -73,7 +78,17 @@ function Wrapper(props) {
         </Arrow>
       </InfoHeader>
       <InfoContentDiv>
-        <InfoContent>{props.description}</InfoContent>
+        {Array.isArray(props.description) ? (
+          props.description.map((equipment, index) => {
+            return (
+              <InfoContent key={`${equipment}-${index}`}>
+                {equipment}
+              </InfoContent>
+            )
+          })
+        ) : (
+          <InfoContent>{props.description}</InfoContent>
+        )}
       </InfoContentDiv>
     </InfoContainer>
   ) : (

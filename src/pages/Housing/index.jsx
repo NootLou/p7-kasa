@@ -8,27 +8,12 @@ import Wrapper from '../../components/Wrapper'
 
 const HousingContainer = styled.div`
   // border: 1px solid black;
+  width: 90%;
   margin: 20px auto;
   color: #ff6060;
   display: flex;
   flex-direction: column;
 `
-
-// ------------------------------------ GALLERIE IMAGES ------------------------------------
-// const Gallery = styled.div`
-//   width: 100%;
-//   margin: 24px auto;
-//   height: 515px;
-//   border-radius: 25px;
-//   overflow: hidden;
-//   display: flex;
-//   align-items: center;
-// `
-// const Cover = styled.img`
-//   width: 100%;
-//   position: relative;
-//   bottom: 50px;
-// `
 
 // ------------------------------------ INFOS DU LOGEMENT ------------------------------------
 const HousingInfosContainer = styled.div`

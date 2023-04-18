@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import footerLogo from '../../assets/footer-LOGO.png'
 
 const FooterContainer = styled.div`
-  width: 120%;
+  width: 100%;
   margin: 0 auto;
   height: 200px;
   background-color: black;
@@ -12,9 +12,9 @@ const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
   // padding-top: 20px;
-  position: absolute;
-  bottom: -240px;
-  left: -10%;
+  // position: absolute;
+  // bottom: 0px;
+  // left: 0px;
 `
 
 const StyledImage = styled.img`
