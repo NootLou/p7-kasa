@@ -8,6 +8,10 @@ const InfoContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #f7f7f7;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-bottom: 20px;
+  }
 `
 
 const InfoHeader = styled.div`

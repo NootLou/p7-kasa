@@ -9,18 +9,39 @@ const ErrorContainer = styled.div`
   margin: 120px;
   text-align: center;
   color: #ff6060;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 90%;
+    margin: 100px auto;
+  }
 `
 
 const Error404 = styled.img`
   // border: 1px solid black;
   height: 263px;
   margin-bottom: 100px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    max-height: 80px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
 `
 
 const ErrorTitle = styled.h1`
   // border: 1px solid black;
   font-size: 36px;
   margin-bottom: 220px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 70%;
+
+    margin-bottom: 150px;
+  }
 `
 
 const HomePageLink = styled(Link)`
@@ -28,6 +49,10 @@ const HomePageLink = styled(Link)`
   font-size: 18px;
   text-decoration: underline;
   color: #ff6060;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin: 0px;
+  }
 `
 
 function Error() {

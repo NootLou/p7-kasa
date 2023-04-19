@@ -13,6 +13,13 @@ const CarouselContainer = styled.div`
   justify-content: center;
   border-radius: 25px;
   margin-bottom: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    height: 225px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
 `
 
 const RightArrow = styled.div`
@@ -22,6 +29,12 @@ const RightArrow = styled.div`
   z-index: 10;
   color: white;
   font-size: 65px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    top: 100px;
+    right: 10px;
+    font-size: 28px;
+  }
 `
 
 const LeftArrow = styled.div`
@@ -31,6 +44,12 @@ const LeftArrow = styled.div`
   z-index: 10;
   color: white;
   font-size: 65px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    top: 100px;
+    left: 10px;
+    font-size: 28px;
+  }
 `
 
 const ItemIndex = styled.span`
@@ -38,6 +57,12 @@ const ItemIndex = styled.span`
   font-size: 24px;
   position: absolute;
   top: 560px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    top: 200px;
+    font-size: 12px;
+    // bottom: 20px;
+  }
 `
 
 function Carousel({ slides }) {
@@ -55,15 +80,19 @@ function Carousel({ slides }) {
   return (
     <CarouselContainer>
       <CarouselItem slide={`${slides[activeSlide]}`}></CarouselItem>
-      <RightArrow onClick={() => nextSlide()}>
-        <BsChevronRight />
-      </RightArrow>
-      <LeftArrow onClick={() => previousSlide()}>
-        <BsChevronLeft />
-      </LeftArrow>
-      <ItemIndex>
-        {activeSlide + 1} / {length}
-      </ItemIndex>
+      {slides.length > 1 && (
+        <>
+          <RightArrow onClick={() => nextSlide()}>
+            <BsChevronRight />
+          </RightArrow>
+          <LeftArrow onClick={() => previousSlide()}>
+            <BsChevronLeft />
+          </LeftArrow>
+          <ItemIndex>
+            {activeSlide + 1} / {length}
+          </ItemIndex>
+        </>
+      )}
     </CarouselContainer>
   )
 }

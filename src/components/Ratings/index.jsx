@@ -6,12 +6,21 @@ const StarContainer = styled.div`
   // border: 1px solid black;
   display: flex;
   margin-top: 20px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin: 0px;
+  }
 `
 
 const Star = styled.img`
   height: 25px;
   width: 25px;
   margin: 5px;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    height: 13px;
+    width: 13px;
+  }
 `
 
 function Ratings({ rating }) {

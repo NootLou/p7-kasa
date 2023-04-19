@@ -22,6 +22,10 @@ const HousingInfosContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 // ------------------------------------ DESCRIPTION ------------------------------------
@@ -30,14 +34,26 @@ const DescriptionContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    flex-direction: column;
+  }
 `
 const DescriptionDiv = styled.div`
   // border: 1px solid black;
   width: 45%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 100%;
+  }
 `
 const EquipmentDiv = styled.div`
   // border: 1px solid black;
   width: 45%;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 100%;
+  }
 `
 
 function Housing() {

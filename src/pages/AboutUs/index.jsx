@@ -6,7 +6,7 @@ import Wrapper from '../../components/Wrapper'
 const Container = styled.div`
   // border: 1px solid black;
   width: 90%;
-  min-height: 800px;
+  min-height: 80vh;
   margin: 0 auto;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/LOGO.png'
+import { NavLink } from 'react-router-dom'
 // import { useEffect } from 'react'
 
 const HeaderContainer = styled.div`
@@ -25,7 +26,7 @@ const StyledImage = styled.img`
   }
 `
 
-const NavList = styled.nav`
+const Nav = styled.nav`
   // border: 1px solid black;
   margin: 0px;
   padding: 0px;
@@ -33,14 +34,29 @@ const NavList = styled.nav`
   justify-content: space-between;
 `
 
-const StyledLink = styled(Link)`
-  // border: 1px solid black;
+// const StyledNavLink = styled(NavLink)`
+//   // border: 1px solid black;
+//   color: #ff6060;
+//   padding: 10px;
+//   font-size: 24px;
+//   text-decoration: none;
+//   white-space: nowrap;
+//   // &:hover {
+//   //   text-decoration: underline;
+//   // }
+//   &.${(props) => props.activeClassName} {
+//     color: red;
+//   }
+
+// `
+
+const StyledNavLink = styled(NavLink)`
   color: #ff6060;
   padding: 10px;
   font-size: 24px;
   text-decoration: none;
   white-space: nowrap;
-  &:hover {
+  &.active {
     text-decoration: underline;
   }
 
@@ -56,10 +72,10 @@ function Header() {
       <HomeLink to="/">
         <StyledImage src={logo} alt="Logo"></StyledImage>
       </HomeLink>
-      <NavList>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/aboutus">A Propos</StyledLink>
-      </NavList>
+      <Nav>
+        <StyledNavLink to="/">Accueil</StyledNavLink>
+        <StyledNavLink to="/aboutus">A Propos</StyledNavLink>
+      </Nav>
     </HeaderContainer>
   )
 }
