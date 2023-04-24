@@ -18,7 +18,7 @@ const CardContainer = styled.div`
 `
 
 const Profile = styled.div`
-  border: 1px solid blue;
+  // border: 1px solid blue;
   //   width: 15%;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ const Profile = styled.div`
 `
 
 const Name = styled.p`
-  border: 1px solid black;
+  // border: 1px solid black;
   width: 65px;
   margin-right: 10px;
   padding: 0px 5px;

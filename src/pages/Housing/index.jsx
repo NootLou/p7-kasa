@@ -5,6 +5,7 @@ import Carousel from '../../components/Carousel'
 import HousingInfos from '../../components/HousingInfos'
 import ProfileCard from '../../components/ProfileCard'
 import Wrapper from '../../components/Wrapper'
+import Error from '../../components/Error'
 
 const HousingContainer = styled.div`
   // border: 1px solid black;
@@ -58,12 +59,11 @@ const EquipmentDiv = styled.div`
 
 function Housing() {
   const { id } = useParams()
-  console.log(id)
-
   const housing = housingList.find((element) => element.id === id)
-  console.log(housing)
 
-  return (
+  return housing === undefined ? (
+    <Error />
+  ) : (
     <HousingContainer>
       <Carousel slides={housing.pictures}></Carousel>
       <HousingInfosContainer>
