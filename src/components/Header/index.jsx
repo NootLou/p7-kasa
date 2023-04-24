@@ -2,10 +2,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/LOGO.png'
 import { NavLink } from 'react-router-dom'
-// import { useEffect } from 'react'
 
 const HeaderContainer = styled.div`
-  // border: 1px solid black;
   width: 90%;
   margin: 20px auto;
   padding: 0px;
@@ -27,28 +25,11 @@ const StyledImage = styled.img`
 `
 
 const Nav = styled.nav`
-  // border: 1px solid black;
   margin: 0px;
   padding: 0px;
   display: flex;
   justify-content: space-between;
 `
-
-// const StyledNavLink = styled(NavLink)`
-//   // border: 1px solid black;
-//   color: #ff6060;
-//   padding: 10px;
-//   font-size: 24px;
-//   text-decoration: none;
-//   white-space: nowrap;
-//   // &:hover {
-//   //   text-decoration: underline;
-//   // }
-//   &.${(props) => props.activeClassName} {
-//     color: red;
-//   }
-
-// `
 
 const StyledNavLink = styled(NavLink)`
   color: #ff6060;

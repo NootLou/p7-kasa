@@ -8,7 +8,6 @@ import Wrapper from '../../components/Wrapper'
 import Error from '../../components/Error'
 
 const HousingContainer = styled.div`
-  // border: 1px solid black;
   width: 90%;
   margin: 20px auto;
   color: #ff6060;
@@ -18,7 +17,6 @@ const HousingContainer = styled.div`
 
 // ------------------------------------ INFOS DU LOGEMENT ------------------------------------
 const HousingInfosContainer = styled.div`
-  // border: 1px solid black;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -31,7 +29,6 @@ const HousingInfosContainer = styled.div`
 
 // ------------------------------------ DESCRIPTION ------------------------------------
 const DescriptionContainer = styled.div`
-  // border: 1px solid black;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -41,7 +38,6 @@ const DescriptionContainer = styled.div`
   }
 `
 const DescriptionDiv = styled.div`
-  // border: 1px solid black;
   width: 45%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -49,7 +45,6 @@ const DescriptionDiv = styled.div`
   }
 `
 const EquipmentDiv = styled.div`
-  // border: 1px solid black;
   width: 45%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {

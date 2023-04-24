@@ -4,7 +4,6 @@ import bannerImage from '../../assets/banner2.png'
 import Wrapper from '../../components/Wrapper'
 
 const Container = styled.div`
-  // border: 1px solid black;
   width: 90%;
   min-height: 80vh;
   margin: 0 auto;

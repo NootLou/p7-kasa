@@ -3,7 +3,6 @@ import emptyStar from '../../assets/GreyStar.png'
 import styled from 'styled-components'
 
 const StarContainer = styled.div`
-  // border: 1px solid black;
   display: flex;
   margin-top: 20px;
 

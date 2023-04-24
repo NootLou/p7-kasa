@@ -4,7 +4,6 @@ import { BsChevronDown } from 'react-icons/bs'
 import { BsChevronUp } from 'react-icons/bs'
 
 const InfoContainer = styled.div`
-  // border: 1px solid black;
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #f7f7f7;
@@ -15,7 +14,6 @@ const InfoContainer = styled.div`
 `
 
 const InfoHeader = styled.div`
-  // border: 1px solid black;
   margin: 0 auto;
   padding: 5px;
   background-color: #ff6060;
@@ -26,7 +24,6 @@ const InfoHeader = styled.div`
 `
 
 const Title = styled.p`
-  // border: 1px solid black;
   color: white;
   font-size: 24px;
   margin: 0px;
@@ -38,7 +35,6 @@ const Title = styled.p`
 `
 
 const Arrow = styled.div`
-  // border: 1px solid black;
   position: relative;
   right: 15px;
   color: white;
@@ -52,13 +48,11 @@ const Arrow = styled.div`
 `
 
 const InfoContentDiv = styled.div`
-  // border: 1px solid black;
   margin: 0 px;
   padding: 20px;
 `
 
 const InfoContent = styled.p`
-  // border: 1px solid black;
   color: #ff6060;
   font-size: 24px;
   line-height: 142.6%;

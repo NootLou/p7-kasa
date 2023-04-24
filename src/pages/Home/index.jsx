@@ -5,7 +5,6 @@ import banner from '../../assets/banner.png'
 import Card from '../../components/Card'
 
 const Banner = styled.div`
-  // border: 1px solid black;
   width: 90%;
   margin: 24px auto;
   height: 400px;
@@ -22,7 +21,6 @@ const Banner = styled.div`
 `
 
 const Filter = styled.div`
-  // border: 1px solid red;
   opacity: 0.3;
   height: 100%;
   border-radius: 50px;
@@ -35,7 +33,6 @@ const Filter = styled.div`
 `
 
 const Title = styled.h1`
-  // border: 1px solid black;
   margin: 0px;
   position: absolute;
   top: 0px;
@@ -59,7 +56,6 @@ const Title = styled.h1`
 `
 
 const GalleryContainer = styled.div`
-  // border: 1px solid black;
   width: 90%;
   margin: 20px auto;
   padding: 40px 0px;

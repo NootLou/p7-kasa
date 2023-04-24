@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const HousingInfosContainer = styled.div`
-  // border: 1px solid black;
   width: 50%;
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -10,7 +9,6 @@ const HousingInfosContainer = styled.div`
 `
 
 const Title = styled.h1`
-  // border: 1px solid black;
   font-size: 36px;
   line-height: 51px;
   margin: 0px;
@@ -22,7 +20,6 @@ const Title = styled.h1`
 `
 
 const Location = styled.p`
-  // border: 1px solid black;
   font-size: 18px;
   margin: 10px 0px 20px 0px;
 
@@ -32,13 +29,11 @@ const Location = styled.p`
 `
 
 const TagsContainer = styled.div`
-  // border: 1px solid black;
   display: flex;
   align-items: space-between;
 `
 
 const Tags = styled.p`
-  // border: 1px solid black;
   width: 145px;
   margin-right: 10px;
   padding: 5px;

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import footerLogo from '../../assets/footer-LOGO.png'
 
 const FooterContainer = styled.div`
@@ -11,18 +10,12 @@ const FooterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // padding-top: 20px;
-  // position: absolute;
-  // bottom: 0px;
-  // left: 0px;
 `
 
 const StyledImage = styled.img`
-  // border: 1px solid white;
   height: 40px;
 `
 const StyledText = styled.p`
-  // border: 1px solid white;
   margin: 0px;
   margin-top: 20px;
   color: white;

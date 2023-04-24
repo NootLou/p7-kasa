@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import Ratings from '../Ratings'
 
 const CardContainer = styled.div`
-  // border: 1px solid black;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -18,15 +17,12 @@ const CardContainer = styled.div`
 `
 
 const Profile = styled.div`
-  // border: 1px solid blue;
-  //   width: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `
 
 const Name = styled.p`
-  // border: 1px solid black;
   width: 65px;
   margin-right: 10px;
   padding: 0px 5px;
@@ -40,8 +36,7 @@ const Name = styled.p`
 `
 
 const ProfilePhoto = styled.img`
-    // border: 1px solid black;
-  height: 70px;
+    height: 70px;
   border-radius: 50px;
   margin: 0px;
 
